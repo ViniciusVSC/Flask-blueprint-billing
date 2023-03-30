@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário de Cobrança</title>
+  </head>
+  <body>
+    <h1>Formulário de Cobrança</h1>
+    <form>
+      <label for="data_hora">Data e hora da cobrança:</label>
+      <input
+        type="datetime-local"
+        id="data_hora"
+        name="data_hora"
+      /><br /><br />
+
+      <label for="comanda">Número da comanda:</label>
+      <input type="text" id="comanda" name="comanda" /><br /><br />
+
+      <label for="valor_total">Valor total:</label>
+      <input
+        type="text"
+        id="valor_total"
+        name="valor_total"
+        step="0.01"
+      /><br /><br />
+
+      <label for="forma_pagamento">Forma de pagamento:</label><br />
+      <input
+        type="radio"
+        id="dinheiro"
+        name="forma_pagamento"
+        value="dinheiro"
+      />
+      <label for="dinheiro">Dinheiro</label><br />
+
+      <input type="radio" id="cartao" name="forma_pagamento" value="cartao" />
+      <label for="cartao">Cartão</label><br />
+
+      <input type="radio" id="pix" name="forma_pagamento" value="pix" />
+      <label for="pix">Pix</label><br /><br />
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
